@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Status.h"
+#import "NSObject+Runtime.h"
 
 @interface ViewController ()
 
@@ -16,14 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"status.plist" ofType:nil];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    Status *model = [Status initWithDict:dict];
+        
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

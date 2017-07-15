@@ -13,6 +13,10 @@
 		5496072D1F191ED100493C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5496072B1F191ED100493C87 /* Main.storyboard */; };
 		5496072F1F191ED100493C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5496072E1F191ED100493C87 /* Assets.xcassets */; };
 		549607321F191ED100493C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549607301F191ED100493C87 /* LaunchScreen.storyboard */; };
+		549607481F1A3F1F00493C87 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 549607471F1A3F1F00493C87 /* Status.m */; };
+		5496074A1F1A3FFA00493C87 /* status.plist in Resources */ = {isa = PBXBuildFile; fileRef = 549607491F1A3FFA00493C87 /* status.plist */; };
+		5496074D1F1A4BF100493C87 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5496074C1F1A4BF100493C87 /* User.m */; };
+		549607501F1A4E5200493C87 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5496074F1F1A4E5200493C87 /* NSObject+Runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		5496072E1F191ED100493C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		549607311F191ED100493C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		549607331F191ED100493C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		549607461F1A3F1F00493C87 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		549607471F1A3F1F00493C87 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		549607491F1A3FFA00493C87 /* status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status.plist; sourceTree = "<group>"; };
+		5496074B1F1A4BF100493C87 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5496074C1F1A4BF100493C87 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5496074E1F1A4E5200493C87 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		5496074F1F1A4E5200493C87 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,12 @@
 				549607261F191ED100493C87 /* AppDelegate.m */,
 				549607281F191ED100493C87 /* ViewController.h */,
 				549607291F191ED100493C87 /* ViewController.m */,
+				5496074E1F1A4E5200493C87 /* NSObject+Runtime.h */,
+				5496074F1F1A4E5200493C87 /* NSObject+Runtime.m */,
+				549607461F1A3F1F00493C87 /* Status.h */,
+				549607471F1A3F1F00493C87 /* Status.m */,
+				5496074B1F1A4BF100493C87 /* User.h */,
+				5496074C1F1A4BF100493C87 /* User.m */,
 				5496072B1F191ED100493C87 /* Main.storyboard */,
 				5496072E1F191ED100493C87 /* Assets.xcassets */,
 				549607301F191ED100493C87 /* LaunchScreen.storyboard */,
@@ -74,6 +91,7 @@
 		549607221F191ED100493C87 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				549607491F1A3FFA00493C87 /* status.plist */,
 				549607231F191ED100493C87 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +158,7 @@
 			files = (
 				549607321F191ED100493C87 /* LaunchScreen.storyboard in Resources */,
 				5496072F1F191ED100493C87 /* Assets.xcassets in Resources */,
+				5496074A1F1A3FFA00493C87 /* status.plist in Resources */,
 				5496072D1F191ED100493C87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5496074D1F1A4BF100493C87 /* User.m in Sources */,
+				549607501F1A4E5200493C87 /* NSObject+Runtime.m in Sources */,
 				5496072A1F191ED100493C87 /* ViewController.m in Sources */,
 				549607271F191ED100493C87 /* AppDelegate.m in Sources */,
+				549607481F1A3F1F00493C87 /* Status.m in Sources */,
 				549607241F191ED100493C87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
